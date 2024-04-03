@@ -1,0 +1,266 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 245, 232);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    z-index: 1;
+    max-width: 100%;
+}
+
+
+.fotky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3% 3%;
+    background-color: rgb(235, 177, 140);
+    border: 5px solid rgb(162, 110, 67);
+    margin: 2% 12%;
+    margin-bottom: 12px;
+    border-radius: 2%;
+
+}
+
+.obrazok {
+    flex: 1;
+    margin: 5px;
+    margin-left: 35px;
+    transition: transform 0.3s ease;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: burlywood;
+}
+
+.menu li a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+.container {
+    padding: 1%;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.nadpis {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.obrazok:hover {
+    transform: scale(1.2);
+}
+
+.omne {
+    padding-top: 30px;
+    background-color: rgb(235, 177, 140);
+    margin: 9% 12%;
+    border: 5px solid rgb(162, 110, 67);
+    border-radius: 2%;
+}
+
+.omne h1 {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.fotka-omne {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.text h2 {
+    text-align: center;
+    margin: 15px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.clear {
+    margin-top: 20px;
+    clear: both;
+}
+
+.fotka-omne img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px;
+    gap: 20px;
+    background-color: bisque;
+}
+
+.row p {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.row .col-25 {
+    width: 25%;
+}
+
+.row .col-25 img {
+    margin-bottom: 20px;
+}
+
+.row .col-25 li{
+    margin-top: 20px;
+}
+
+
+.copyright {
+    background-color: black;
+    color: white;
+    padding: 0.4%;
+    text-align: center;
+}
+
+.nadpis-cennik {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(162, 110, 67);
+}
+
+td {
+    background-color: rgb(235, 177, 140);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 400px;
+}
+
+.cennik {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.cennik p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-tlacitko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.tlacitko {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 15%;
+    border: 2px solid black;
+}
+
+.tlacitko a {
+    text-decoration: none;
+    color: black;
+}
+
+.tlacitko a:hover {
+    color: brown;
+}
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+    .main-header {
+        position: relative;
+        top: 0px;
+    }
+
+    .menu.responsive {
+        display: block;
+        position: absolute;
+        background-color: rgb(250, 227, 196);
+        width: 100%;
+        top: 60px;
+        left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu.responsive li {
+        display: block;
+        margin-left: 37%;
+    }
+
+    .menu.responsive li a {
+        color: rgb(210, 155, 87);
+    }
+
+    .menu.responsive li a:hover {
+        color: brown;
+    }
+
+}
