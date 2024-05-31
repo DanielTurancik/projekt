@@ -1,5 +1,5 @@
-    <?php 
-        include_once("partials/header.php");
+    <?php
+    include_once("partials/header.php");
     ?>
 
     <!-- <link rel="stylesheet" href="css/style3.css"> -->
@@ -21,6 +21,6 @@
         </section>
     </main>
 
-    <?php 
-        include_once("partials/footer.php");
+    <?php
+    include_once("partials/footer.php");
     ?>

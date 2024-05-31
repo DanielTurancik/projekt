@@ -1,8 +1,8 @@
-    <?php 
-        include_once("partials/header.php");
+    <?php
+    include_once("partials/header.php");
     ?>
 
-    <!-- <link rel="stylesheet" href="css/style4.css"> -->
+    <link rel="stylesheet" href="css/style4.css">
     <main>
         <section class="faq">
             <div class="nadpis">
@@ -51,6 +51,6 @@
 
 
     </main>
-    <?php 
-        include_once("partials/footer.php");
+    <?php
+    include_once("partials/footer.php");
     ?>

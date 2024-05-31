@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/slides.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
 awesome/4.7.0/css/font-awesome.min.css">
-    
+
 
 </head>
 
@@ -25,10 +25,10 @@ awesome/4.7.0/css/font-awesome.min.css">
         </div>
         <nav class='main-nav'>
             <ul class="menu" id="menu">
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.php">Domov</a></li>
+                <li><a href="portfolio.php">Portfólio</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
+                <li><a href="faq.php">FAQ</a></li>
             </ul>
             <a class="hamburger" id="hamburger">
                 <i class="fa fa-bars"></i>

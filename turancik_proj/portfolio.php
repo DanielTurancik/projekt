@@ -1,8 +1,8 @@
-    <?php 
-        include_once("partials/header.php");
+    <?php
+    include_once("partials/header.php");
     ?>
 
-    <!-- <link rel="stylesheet" href="css/style2.css"> -->
+    <link rel="stylesheet" href="css/style2.css">
     <main>
         <h1>Moje portfólio</h1>
         <section class="slides-container">
@@ -52,6 +52,6 @@
 
     </main>
 
-    <?php 
-        include_once("partials/footer.php");
+    <?php
+    include_once("partials/footer.php");
     ?>
