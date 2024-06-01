@@ -12,7 +12,7 @@
             <!-- <form id="formu" action="podakovanie.html" method="get" target="_blank"> -->
             <form id="formu" method="post" action="db/spracovanieFormulara.php" target="_blank">
                 <input type="text" id="name" name="name" required placeholder="Meno"><br>
-                <input type="text" id="surname" name="surname" required placeholder="Priezvisko"><br>
+                <!-- <input type="text" id="surname" name="surname" required placeholder="Priezvisko"><br> -->
                 <input type="email" id="email" name="email" required placeholder="E-mail"><br>
                 <textarea id="text" name="text" placeholder="Poznámka"></textarea><br>
                 <label for="check">Súhlasím so spracovaním osobných údajov</label>
