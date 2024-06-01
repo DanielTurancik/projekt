@@ -1,45 +1,36 @@
 <?php
 
-namespace formular;
-require_once('../db/config.php');
+error_reporting(E_ALL);
+ini_set("display_errors", "On");
+require_once(__ROOT__ . "/classes/Database.php");
 
-use PDO;
-class Kontakt{
+class Kontakt extends Database
+{
 
-    private $conn;
+    protected $connection;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->connect();
+        $this->connection = $this->getConnection();
     }
 
-    private function connect() {
-        $config = DATABASE;
-
-        $options = array(
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        );
-
+    public function ulozitSpravu($meno, $email, $sprava)
+    {
+        $sql = "INSERT INTO kontakt_formular (meno, email, sprava) VALUES (:meno, :email, :sprava)";
+        $statement = $this->connection->prepare($sql);
         try {
-            $this->conn = new PDO('mysql:host=' . $config['HOST'] . ';dbname=' . $config['DBNAME'] . ';port=' . $config['PORT'], $config['USER_NAME'], $config['PASSWORD'], $options);
-        } catch (\PDOException $e) {
-            die("Chyba pripojenia: " . $e->getMessage());
-        }
-    }
-    public function ulozitSpravu($meno, $email, $sprava) {
-        $sql = "INSERT INTO kontakt_formular (meno, email, sprava) 
-                VALUE ('" . $meno . "', '" . $email . "', '" . $sprava . "')";
-        $statement = $this->conn->prepare($sql);
-
-        try {
-            $insert = $statement->execute();
+            $insert = $statement->execute(array(
+                ':meno' => $meno,
+                ':email' => $email,
+                ':sprava' => $sprava
+            ));
             http_response_code(200);
             return $insert;
         } catch (\Exception $exception) {
-            return http_response_code(404);
+            http_response_code(500);
+            die("Chyba pri odosielaní správy do databázy: " . $exception->getMessage());
+            return false;
         }
-    }
-    public function __destruct() {
-        $this->conn = null;
     }
 }

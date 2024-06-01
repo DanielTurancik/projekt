@@ -1,13 +1,15 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", "On");
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__ . '/classes/Kontakt.php');
 
-require_once('../classes/Kontakt.php');
-
-use formular\Kontakt;
 
 $meno = $_POST['name'];
 $email = $_POST['email'];
-$sprava = $_POST['text'];
-
+$sprava = $_POST['sprava'];
+ini_set('display_errors', 1);
+ini_set('error_reporting', E_ALL);
 // Overenie údajov
 if (empty($meno) || empty($email) || empty($sprava)) {
     die('Chyba: Všetky polia sú povinné!');

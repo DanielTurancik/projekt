@@ -14,7 +14,7 @@
                 <input type="text" id="name" name="name" required placeholder="Meno"><br>
                 <!-- <input type="text" id="surname" name="surname" required placeholder="Priezvisko"><br> -->
                 <input type="email" id="email" name="email" required placeholder="E-mail"><br>
-                <textarea id="text" name="text" placeholder="Poznámka"></textarea><br>
+                <textarea id="text" name="sprava" placeholder="Poznámka"></textarea><br>
                 <label for="check">Súhlasím so spracovaním osobných údajov</label>
                 <input type="checkbox" id="check" name="check" required><br>
                 <input type="submit" value="Odoslať" onclick="odoslat()">
