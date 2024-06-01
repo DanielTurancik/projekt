@@ -8,41 +8,6 @@ body {
 }
 
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    z-index: 1;
-    max-width: 100%;
-}
-
-main{
-    padding-top: 180px;
-}
-
-
-.menu li {
-    display: inline;
-    margin-right: 30px;
-}
-
-.menu li a {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: burlywood;
-}
-
-.menu li a:hover {
-    color: brown;
-    text-decoration: underline;
-}
 
 .hamburger {
     display: none;
@@ -73,7 +38,7 @@ main{
     margin-bottom: 20px;
 }
 
-.row .col-25 li{
+.row .col-25 li {
     margin-top: 20px;
 }
 
@@ -84,7 +49,7 @@ main{
     text-align: center;
 }
 
-.formular{
+.formular {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,38 +57,44 @@ main{
     width: 100%;
     margin-bottom: 150px;
 }
-input{
+
+input {
     width: 300px;
     height: 40px;
     margin-bottom: 50px;
     border-radius: 15px;
     border: solid black 2px;
 }
-textarea{
+
+textarea {
     width: 300px;
     height: 300px;
     border-radius: 15px;
     border: solid black 2px;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     border-radius: 15px;
     height: 16px;
 }
+
 label {
-    display: block; 
+    display: block;
     font-size: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     font-weight: bold;
 }
-.nadpis h1{
+
+.nadpis h1 {
     text-align: center;
     margin-bottom: 80px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: antiquewhite;
 }
-input[type="submit"]:hover{
+
+input[type="submit"]:hover {
     background-color: rgb(235, 177, 140);
 }
 

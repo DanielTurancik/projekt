@@ -18,11 +18,6 @@ awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <header class="main-header container">
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.jpg" height="50px">
-            </a>
-        </div>
         <nav class='main-nav'>
             <ul class="menu" id="menu">
                 <li><a href="index.php">Domov</a></li>

@@ -8,36 +8,7 @@ body {
 }
 
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    z-index: 1;
-    max-width: 100%;
-}
 
-.menu li {
-    display: inline;
-    margin-right: 30px;
-}
-
-.menu li a {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: burlywood;
-}
-
-.menu li a:hover {
-    color: brown;
-    text-decoration: underline;
-}
 
 .hamburger {
     display: none;

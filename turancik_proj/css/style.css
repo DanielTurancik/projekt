@@ -7,7 +7,6 @@ body {
     background-color: rgb(255, 245, 232);
 }
 
-
 header {
     position: fixed;
     top: 0;
@@ -16,7 +15,7 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: antiquewhite;
     z-index: 1;
     max-width: 100%;
@@ -36,11 +35,8 @@ header {
 
 }
 
-.obrazok {
-    flex: 1;
-    margin: 5px;
-    margin-left: 35px;
-    transition: transform 0.3s ease;
+.menu {
+    float: right;
 }
 
 .menu li {
@@ -59,6 +55,14 @@ header {
     color: brown;
     text-decoration: underline;
 }
+
+.obrazok {
+    flex: 1;
+    margin: 5px;
+    margin-left: 35px;
+    transition: transform 0.3s ease;
+}
+
 
 .hamburger {
     display: none;
@@ -147,7 +151,7 @@ main {
     margin-bottom: 20px;
 }
 
-.row .col-25 li{
+.row .col-25 li {
     margin-top: 20px;
 }
 

@@ -1,0 +1,37 @@
+.plus-button-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    /* green */
+    color: white;
+    /* white text */
+    padding: 14px 20px;
+    /* some padding */
+    text-align: center;
+    /* center the text */
+    text-decoration: none;
+    /* remove underline */
+    font-size: 17px;
+    /* increase text size */
+    margin: 4px 2px;
+    /* some margin */
+    cursor: pointer;
+    /* add a mouse pointer on hover */
+    border-radius: 12px;
+    /* rounded corners */
+    transition-duration: 0.4s;
+    /* transition */
+}
+
+.plus-button-link:hover {
+    background-color: #45a049;
+    /* green */
+    color: white;
+    /* white text */
+}
+
+
+img {
+    width: 240px;
+    height: 350px;
+    object-fit: cover;
+}
