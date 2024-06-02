@@ -8,9 +8,9 @@
         </div>
         <div class="col-25">
             <h4>Odkazy</h4>
-            <p><a href="https://www.instagram.com/" target="_blank"><img src="img/instagramIcon.png" height="30px"></a></p>
-            <p><a href="https://www.facebook.com/" target="_blank"><img src="img/facebookIcon.png" height="30px"></a></p>
-            <p><a href="https://www.youtube.com/" target="_blank"><img src="img/youtubeIcon.png" height="30px"></a>
+            <p><a href="https://www.instagram.com/" target="_blank">instagram</a></p>
+            <p><a href="https://www.facebook.com/" target="_blank">facebook</a></p>
+            <p><a href="https://www.youtube.com/" target="_blank">youtube</a>
             </p>
         </div>
         <div class="col-25">

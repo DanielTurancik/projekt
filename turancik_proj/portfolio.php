@@ -23,10 +23,10 @@ $conn = $db->getConnection();
         </div>
         <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka3.jpg" alt="Obrázok 3" style="width: 240px; height: 350px;">
-        </div>
+        </div>-->
         <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka4.jpg" alt="Obrázok 4" style="width: 240px; height: 350px;">
-        </div>  -->
+        </div>
     </section>
 
     <section class="slides-container2" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
@@ -41,10 +41,10 @@ $conn = $db->getConnection();
         <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka6.jpg" alt="Obrázok 6" style="width: 240px; height: 350px;">
         </div>
-        <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
+        <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka7.jpg" alt="Obrázok 7" style="width: 240px; height: 350px;">
         </div>
-        <div class="slide" style="flex: 1 0 10%; margin: 1%;">
+        <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka8.jpg" alt="Obrázok 8" style="width: 240px; height: 350px;">
         </div>  -->
     </section>

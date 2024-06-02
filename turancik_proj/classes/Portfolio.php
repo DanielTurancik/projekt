@@ -33,8 +33,8 @@ class Portfolio
             echo "<section class='" . $sectionClass . "'>";
             echo "<div>";
             echo "<img src='" . $row['obrazok'] . "' alt='Image'><br>";
-            echo '<a href="../update.php?id=' . $row['id'] . '" class="btn btn-update btn-sm">Update</a> ';
-            echo '<a href="../delete.php?id=' . $row['id'] . '" class="btn btn-danger btn-sm">Delete</a>';
+            echo '<a href="update.php?id=' . $row['id'] . '" class="btn btn-update btn-sm">Update</a> ';
+            echo '<a href="delete.php?id=' . $row['id'] . '" class="btn btn-danger btn-sm">Delete</a>';
             echo "</div>";
             echo "</section>";
         }
