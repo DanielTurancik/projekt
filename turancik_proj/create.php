@@ -22,13 +22,16 @@ if (isset($_POST['submit'])) {
 
 ?>
 
+<link rel="stylesheet" href="css/create.css">
 <form method="post" enctype="multipart/form-data">
-    Vyberte obrázok na nahranie:
-    <input type="file" name="obrazok" accept="image/*" required>
-    Vyberte sekciu:
-    <select name="typ">
-        <option value="oo">Sekcia 1</option>
-        <option value="kk">Sekcia 2</option>
-    </select>
-    <input type="submit" value="Nahrať obrázok" name="submit">
+    <div>
+        <h1>Create</h1>
+        <input type="file" name="obrazok" accept="image/*" required>
+        Vyberte sekciu:
+        <select name="typ">
+            <option value="oo">Sekcia 1</option>
+            <option value="kk">Sekcia 2</option>
+        </select>
+        <input type="submit" value="Nahrať obrázok" name="submit">
+    </div>
 </form>

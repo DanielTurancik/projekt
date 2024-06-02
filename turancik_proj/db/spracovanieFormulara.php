@@ -22,5 +22,4 @@ if ($ulozene) {
     header('Location: ../podakovanie.php');
 } else {
     die('Chyba pri odosielaní správy do databázy!');
-    //http_response_code(404);
 }

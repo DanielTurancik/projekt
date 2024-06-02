@@ -1,8 +1,8 @@
 .plus-button-link {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: rgb(241, 192, 128);
     /* green */
-    color: white;
+    color: black;
     /* white text */
     padding: 14px 20px;
     /* some padding */
@@ -20,18 +20,49 @@
     /* rounded corners */
     transition-duration: 0.4s;
     /* transition */
+    position: fixed;
+    right: 20px;
+
 }
 
-.plus-button-link:hover {
-    background-color: #45a049;
-    /* green */
-    color: white;
-    /* white text */
-}
 
 
 img {
     width: 240px;
     height: 350px;
     object-fit: cover;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-update {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    margin-left: 150px;
+}
+
+.btn-update:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    margin-left: 89px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
 }

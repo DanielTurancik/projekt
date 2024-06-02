@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
     z-index: 1;
     max-width: 100%;
 }
@@ -267,4 +267,11 @@ table {
         color: brown;
     }
 
+}
+
+footer {
+    margin-top: 200px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

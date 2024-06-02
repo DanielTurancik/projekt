@@ -8,34 +8,35 @@ $conn = $db->getConnection();
 
 <link rel="stylesheet" href="css/newstyle.css">
 <main>
-    <a href="create.php" class="plus-button-link">+</a>
 
-    <section class="slides-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <a href="create.php" class="plus-button-link">+</a>
+    <section class="slides-container" style="display: flex; margin-left: 150px;">
+
         <?php
         $o = new Portfolio($conn);
         $o->read('oo', 'slides-container');
         ?>
-        <div class="slide" style="flex: 1 0 10%; margin: 1%;">
+        <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka1.jpeg" alt="Obrázok 1" style="width: 240px; height: 350px;">
         </div>
         <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka2.jpg" alt="Obrázok 2" style="width: 240px; height: 350px;">
-        </div>
+        </div> -->
         <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka3.jpg" alt="Obrázok 3" style="width: 240px; height: 350px;">
         </div>-->
-        <div class="slide" style="flex: 1 0 10%; margin: 1%;">
+        <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka4.jpg" alt="Obrázok 4" style="width: 240px; height: 350px;">
-        </div>
+        </div> -->
     </section>
 
-    <section class="slides-container2" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <section class="slides-container2" style="display: flex; margin-left: 150px;">
         <?php
         $o2 = new Portfolio($conn);
         $o2->read('kk', 'slides-container2');
 
         ?>
-        <div class="slide" style="flex: 1 0 10%; margin: 1%;">
+        <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka5.jpg" alt="Obrázok 5" style="width: 240px; height: 350px;">
         </div>
         <div class="slide" style="flex: 1 0 10%; margin: 1%;">
@@ -43,7 +44,7 @@ $conn = $db->getConnection();
         </div>
         <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka7.jpg" alt="Obrázok 7" style="width: 240px; height: 350px;">
-        </div>
+        </div> -->
         <!-- <div class="slide" style="flex: 1 0 10%; margin: 1%;">
             <img src="img/fotka8.jpg" alt="Obrázok 8" style="width: 240px; height: 350px;">
         </div>  -->
@@ -86,6 +87,7 @@ $conn = $db->getConnection();
                 <img src="img/fotka12.jpg" alt="Obrázok 12" style="width: 240px; height: 350px;">
             </div>
              More slides as needed -->
+
 </main>
 <!-- <main>
         <h1>Moje portfólio</h1>
